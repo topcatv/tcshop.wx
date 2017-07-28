@@ -2,7 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import { WechatPlugin, AjaxPlugin } from 'vux'
-import FastClick from 'fastclick'
+// import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 import App from './App'
 import store from './store'
@@ -12,7 +12,7 @@ Vue.use(AjaxPlugin)
 Vue.use(WechatPlugin)
 Vue.use(VueRouter)
 
-FastClick.attach(document.body)
+// FastClick.attach(document.body)
 
 Vue.config.productionTip = false
 

@@ -3,18 +3,20 @@
 </style>
 <template>
   <div>
-    <x-header style="background-color:#f7fcf6;" :right-options="{showMore: true}" :left-options="{backText:'',showBack: true}">登录</x-header>
-    <group style="margin-top:0.1rem">
+    <x-header>登录</x-header>
+    <group>
       <x-input title="账号" placeholder="请输入账号" v-model="form.userName"></x-input>
       <x-input title="密码" placeholder="请输入密码" type="password" v-model="form.password"></x-input>
     </group>
-    <x-button style="margin-top:1rem" @click.native="login">登录</x-button>
-    <x-button @click.native="regist">注册</x-button>
+    <box gap="10px 10px">
+      <x-button @click.native="login" type="primary">登录</x-button>
+      <x-button @click.native="regist">注册</x-button>
+    </box>
     <toast v-model="toast" type="warn">{{text}}</toast>
   </div>
 </template>
 <script>
-import { XInput, Group, XButton, XHeader, Toast } from 'vux'
+import { XInput, Group, XButton, XHeader, Toast, Box } from 'vux'
 
 export default {
   data() {
@@ -34,6 +36,7 @@ export default {
     XButton,
     XHeader,
     Toast,
+    Box,
   },
   mounted: () => {
     document.title = '登陆'
