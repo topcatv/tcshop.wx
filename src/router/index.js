@@ -7,6 +7,7 @@ const index = resolve => require(['../vue/index.vue'], resolve)
 const login = resolve => require(['../vue/login.vue'], resolve)
 const category = resolve => require(['../vue/category.vue'], resolve)
 const detail = resolve => require(['../vue/detail.vue'], resolve)
+const car = resolve => require(['../vue/car.vue'], resolve)
 
 const routes = [{
   path: '/index',
@@ -28,6 +29,10 @@ const routes = [{
   path: '/detail/:id',
   name: 'detail',
   component: detail,
+}, {
+  path: '/car',
+  name: 'car',
+  component: car,
 }]
 
 export default new Router({

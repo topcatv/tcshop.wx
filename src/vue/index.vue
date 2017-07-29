@@ -21,13 +21,10 @@
   width: 100%;
   text-align: right;
 }
-.more a {
+.more a a:visited {
   padding-right: 5px;
   color: #9cc;
   font-size: 12px;
-}
-.more a:visited {
-  color: #9cc;
 }
 </style>
 <template>
