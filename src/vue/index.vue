@@ -7,7 +7,7 @@
   line-height:1.2;
 }
 .price {
-  color: red;
+  color: #e4565a;
   font-size: 12px;
   margin-top: 8px;
 }
