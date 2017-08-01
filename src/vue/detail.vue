@@ -152,16 +152,17 @@
           <x-number title="购买数量" v-model="buynum" :min="0" width="40px"></x-number>
         </div>
         <div>
-          <a href="#" class="addCartBtn">加入购物车</a><a href="#" class="buyBtn">立即购买</a>
+          <a href="/car" class="addCartBtn">加入购物车</a><a href="#" class="buyBtn">立即购买</a>
         </div>
       </popup>
     </div>
     <tabbar style="position:fixed">
-      <tabbar-item>
-        <img slot="icon" src="../assets/img/footer_nav_12.png">
+      <tabbar-item @click.native="favorite">
+        <img slot="icon" src="../assets/img/footer_nav_12.png" :style="{display: !favorited?'block':'none'}">
+        <img slot="icon" src="../assets/img/footer_nav_121.png" :style="{display: favorited?'block':'none'}">
         <span slot="label">收藏</span>
       </tabbar-item>
-      <tabbar-item>
+      <tabbar-item link="/car">
         <img slot="icon" src="../assets/img/footer_nav_13.png">
         <span slot="label">购物车</span>
       </tabbar-item>
@@ -197,6 +198,7 @@ export default {
     return {
       state: true,
       sku: {
+        id: 10,
         pics: baseList,
         name: '美式咖啡',
         price: 23.9,
@@ -205,6 +207,7 @@ export default {
         stock: 9999,
       },
       demo5: undefined,
+      favorited: false,
       value: '',
       buynum: 0,
       showSpec: false,
@@ -235,6 +238,10 @@ export default {
   methods: {
     selectSku() {
       this.showSpec = true
+    },
+    favorite() {
+      this.favorited = !this.favorited
+      console.log(this.sku.id)
     },
   },
 }
