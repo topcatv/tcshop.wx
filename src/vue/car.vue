@@ -3,31 +3,52 @@
 .card-padding {
   padding: 5px 8px;
 }
+
 .title {
-  font-size:14px;
-  line-height:1.2;
+  font-size: 14px;
+  line-height: 1.2;
+  margin-top: 12px;
 }
+
 .price {
   color: #e4565a;
   font-size: 12px;
-  margin-top: 8px;
+  margin-top: 38px;
 }
-.content{
+
+.content {
+  margin: 0 5px 122px;
   img {
     height: 100px;
   }
 }
+
 .list {
   img {
     float: left;
   }
   .desc {
     float: left;
-    margin: auto 10px;
+    margin: auto 15px;
   }
   .num {
-    margin-left: 100px;
+    margin-left: 90px;
     color: #999;
+  }
+}
+.cartool {
+  position: fixed;
+  bottom: 52px;
+  width: 100%;
+  .result {
+    line-height: 40px;
+  }
+  .buyBtn {
+    width: 40%;
+    color: #fff;
+    background-color: #ffb86c;
+    text-align: center;
+    float: right;
   }
 }
 </style>
@@ -38,7 +59,7 @@
       <div class="weui-cells weui-cells_checkbox">
         <label class="weui-cell weui-check__label" for="s11">
           <div class="weui-cell__hd">
-            <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked">
+            <input type="checkbox" name="checkbox1" class="weui-check" id="s11">
             <i class="weui-icon-checked"></i>
           </div>
           <div class="weui-cell__bd">
@@ -55,12 +76,119 @@
             <x-img :src="imageUrl" :default-src="defaultImgUrl" />
             <div class="desc">
               <p class="title">神仙水</p>
-              <p class="price">￥123.09<span class="num">x3</span></p>
+              <p class="price">￥123.09
+                <span class="num">x3</span>
+              </p>
+            </div>
+          </div>
+        </label>
+        <label class="weui-cell weui-check__label" for="s12">
+          <div class="weui-cell__hd">
+            <input type="checkbox" name="checkbox1" class="weui-check" id="s12">
+            <i class="weui-icon-checked"></i>
+          </div>
+          <div class="weui-cell__bd list">
+            <x-img :src="imageUrl" :default-src="defaultImgUrl" />
+            <div class="desc">
+              <p class="title">神仙水</p>
+              <p class="price">￥123.09
+                <span class="num">x3</span>
+              </p>
+            </div>
+          </div>
+        </label>
+        <label class="weui-cell weui-check__label" for="s12">
+          <div class="weui-cell__hd">
+            <input type="checkbox" name="checkbox1" class="weui-check" id="s12">
+            <i class="weui-icon-checked"></i>
+          </div>
+          <div class="weui-cell__bd list">
+            <x-img :src="imageUrl" :default-src="defaultImgUrl" />
+            <div class="desc">
+              <p class="title">神仙水</p>
+              <p class="price">￥123.09
+                <span class="num">x3</span>
+              </p>
+            </div>
+          </div>
+        </label>
+        <label class="weui-cell weui-check__label" for="s12">
+          <div class="weui-cell__hd">
+            <input type="checkbox" name="checkbox1" class="weui-check" id="s12">
+            <i class="weui-icon-checked"></i>
+          </div>
+          <div class="weui-cell__bd list">
+            <x-img :src="imageUrl" :default-src="defaultImgUrl" />
+            <div class="desc">
+              <p class="title">神仙水</p>
+              <p class="price">￥123.09
+                <span class="num">x3</span>
+              </p>
+            </div>
+          </div>
+        </label>
+        <label class="weui-cell weui-check__label" for="s12">
+          <div class="weui-cell__hd">
+            <input type="checkbox" name="checkbox1" class="weui-check" id="s12">
+            <i class="weui-icon-checked"></i>
+          </div>
+          <div class="weui-cell__bd list">
+            <x-img :src="imageUrl" :default-src="defaultImgUrl" />
+            <div class="desc">
+              <p class="title">神仙水</p>
+              <p class="price">￥123.09
+                <span class="num">x3</span>
+              </p>
+            </div>
+          </div>
+        </label>
+        <label class="weui-cell weui-check__label" for="s12">
+          <div class="weui-cell__hd">
+            <input type="checkbox" name="checkbox1" class="weui-check" id="s12">
+            <i class="weui-icon-checked"></i>
+          </div>
+          <div class="weui-cell__bd list">
+            <x-img :src="imageUrl" :default-src="defaultImgUrl" />
+            <div class="desc">
+              <p class="title">神仙水</p>
+              <p class="price">￥123.09
+                <span class="num">x3</span>
+              </p>
+            </div>
+          </div>
+        </label>
+        <label class="weui-cell weui-check__label" for="s12">
+          <div class="weui-cell__hd">
+            <input type="checkbox" name="checkbox1" class="weui-check" id="s12">
+            <i class="weui-icon-checked"></i>
+          </div>
+          <div class="weui-cell__bd list">
+            <x-img :src="imageUrl" :default-src="defaultImgUrl" />
+            <div class="desc">
+              <p class="title">神仙水</p>
+              <p class="price">￥123.09
+                <span class="num">x3</span>
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div class="weui-cells weui-cells_checkbox cartool">
+        <label class="weui-cell weui-check__label" for="all">
+          <div class="weui-cell__hd">
+            <input type="checkbox" name="checkbox1" class="weui-check" id="all">
+            <i class="weui-icon-checked"></i>全选
+          </div>
+          <div class="weui-cell__bd">
+            <div class="result">
+              合计：<span class="price">￥6574.09</span>
+              <a href="#" class="buyBtn">结算(0)</a>
             </div>
           </div>
         </label>
       </div>
     </div>
+  
     <tabbar style="position:fixed">
       <tabbar-item link="/">
         <img slot="icon" src="../assets/img/footer_nav_1.png">
@@ -82,7 +210,7 @@
   </div>
 </template>
 <script>
-import { Tabbar, TabbarItem, XHeader, Checklist, Loading, Toast, XImg } from 'vux'
+import { Tabbar, TabbarItem, XHeader, Checklist, Loading, Toast, XImg, Group } from 'vux'
 
 const baseList = [{
   url: '/login',
@@ -124,6 +252,7 @@ export default {
     Loading,
     Toast,
     XImg,
+    Group,
   },
   mounted: () => {
     document.title = '购物车'
@@ -131,10 +260,10 @@ export default {
   methods: {
     onSubmit() {
     },
-    onCancel() {},
-    onFocus() {},
-    getResult() {},
-    resultClick() {},
+    onCancel() { },
+    onFocus() { },
+    getResult() { },
+    resultClick() { },
     detail(id) {
       this.$router.push({ name: 'detail', params: { id } })
     },
